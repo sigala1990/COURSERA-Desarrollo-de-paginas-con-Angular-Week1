@@ -1,0 +1,30 @@
+<!-- <app-destino-viaje *ngFor="let destino of destinos" [nombre]="destino" ></app-destino-viaje> -->
+
+<ul *ngFor="let destino of destinos">
+    <li>
+        <app-destino-viaje [nombre]="destino"></app-destino-viaje>
+
+    </li>
+</ul>
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <span class="anchor" id="formLogin"></span>
+            <div class="card card-outline-secondary">
+                <h3 class="mb-0">Whishlist</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre...">
+                    </div>
+                    <div class="form-group">
+                        <label for="Image Url">Image Url</label>
+                        <input type="text "class=form-control >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
